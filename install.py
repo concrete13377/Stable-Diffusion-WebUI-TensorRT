@@ -44,7 +44,8 @@ def install():
     # ONNX GS
     if not launch.is_installed("onnx_graphsurgeon"):
         print("GS is not installed! Installing...")
-        launch.run_pip("install protobuf==3.20.2", "protobuf", live=True)
+        # launch.run_pip("install protobuf==3.20.2", "protobuf", live=True)
+        launch.run_pip("install protobuf==3.20.2", "protobuf")
         # launch.run_pip('install onnx-graphsurgeon --extra-index-url https://pypi.ngc.nvidia.com', "onnx-graphsurgeon", live=True)
         launch.run_pip(
             "install onnx-graphsurgeon --extra-index-url https://pypi.ngc.nvidia.com",
